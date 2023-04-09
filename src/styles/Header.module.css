@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navLink:is(:hover, :focus) {
+  text-underline-offset: 0.25em;
+  text-decoration: underline;
+  color: var(--clr-neutral-100);
+}
