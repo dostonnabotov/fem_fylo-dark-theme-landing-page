@@ -1,26 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Satish Patel",
-    "position": "Founder & CEO",
-    "company": "Huddle",
-    "avatar": "./assets/images/profile-1",
+    "author": {
+      "name": "Satish Patel",
+      "position": "Founder & CEO",
+      "company": "Huddle",
+      "avatar": "src/assets/images/profile-1.jpg"
+    },
     "message": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
   },
   {
     "id": 2,
-    "name": "Bruce McKenzie",
-    "position": "Founder & CEO",
-    "company": "Huddle",
-    "avatar": "./assets/images/profile-2",
+    "author": {
+      "name": "Bruce McKenzie",
+      "position": "Founder & CEO",
+      "company": "Huddle",
+      "avatar": "src/assets/images/profile-2.jpg"
+    },
     "message": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
   },
   {
     "id": 3,
-    "name": "Iva Boyd",
-    "position": "Founder & CEO",
-    "company": "Huddle",
-    "avatar": "./assets/images/profile-3",
+    "author": {
+      "name": "Iva Boyd",
+      "position": "Founder & CEO",
+      "company": "Huddle",
+      "avatar": "src/assets/images/profile-3.jpg"
+    },
     "message": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
   }
 ]

@@ -1,0 +1,19 @@
+.features {
+  display: grid;
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature > * {
+  max-width: 45ch;
+  margin-inline: auto;
+}
+
+.featureTitle {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+}
