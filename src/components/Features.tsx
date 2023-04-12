@@ -13,8 +13,12 @@ interface IFeaturesProps {
 const Features = ({ data }: IFeaturesProps) => {
   return (
     <section>
-      <div className="container">
-        <ul role="list" className={styles.features}>
+      <div className="container region">
+        <ul
+          role="list"
+          className={`${styles.features} grid`}
+          data-layout="50-50"
+        >
           {data.map(({ title, description, img }) => (
             <li className={`${styles.feature} grid-flow`}>
               <img src={img} alt="" aria-hidden="true" />

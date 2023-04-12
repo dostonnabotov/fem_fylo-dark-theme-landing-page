@@ -1,0 +1,102 @@
+.ctaWrapper {
+  --region-space: var(--size-400);
+  transform: translateY(30%);
+  z-index: 10;
+}
+
+.cta {
+  --flow-space: var(--size-500);
+  width: min(100%, 50rem);
+  margin-inline: auto;
+  padding: clamp(var(--size-500), 8vw, var(--size-800));
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-700);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.cta > * {
+  max-width: unset;
+}
+
+.ctaInputGroup {
+  display: grid;
+  gap: var(--size-400);
+  align-items: center;
+}
+
+@media only screen and (min-width: 50em) {
+  .ctaInputGroup {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.ctaButton {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.ctaForm:valid .ctaButton {
+  opacity: 1;
+  pointer-events: initial;
+  cursor: pointer;
+}
+
+.ctaInput {
+  --default: var(--clr-neutral-400);
+  --invalid: var(--clr-danger-400);
+  --valid: hsl(130 52% 46%);
+  --focus: hsl(39, 100%, 50%);
+  padding: 0.6em 2em;
+  border: 2px solid var(--color, var(--default));
+}
+
+.ctaInput:focus-visible {
+  outline: 1px dashed var(--color);
+  outline-offset: 0.2em;
+}
+
+.ctaInput:invalid {
+  --color: var(--invalid);
+}
+
+.ctaInput:invalid:not(:focus) {
+  animation: shake 0.5s;
+}
+
+.ctaInput:focus {
+  --color: var(--focus);
+}
+
+.ctaInput:valid {
+  --color: var(--valid);
+}
+
+.ctaInput:placeholder-shown {
+  --color: var(--default);
+}
+
+.ctaInput:placeholder-shown:not(:focus) {
+  animation: none;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-2%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(2%);
+  }
+}

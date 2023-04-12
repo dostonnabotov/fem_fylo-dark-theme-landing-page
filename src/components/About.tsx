@@ -1,9 +1,13 @@
+import { RightArrowIcon } from "../assets/icons/icons";
 import styles from "../styles/About.module.css";
 
 const About = () => {
   return (
     <section>
-      <div className={`${styles.about} container`}>
+      <div
+        className={`${styles.about} container region grid`}
+        data-layout="50-50"
+      >
         <div>
           <img
             src="src/assets/images/illustration-stay-productive.png"
@@ -21,8 +25,9 @@ const About = () => {
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            See how Fylo works
+          <a className="custom-link" href="#">
+            <span>See how Fylo works</span>
+            <RightArrowIcon />
           </a>
         </div>
       </div>

@@ -1,23 +1,28 @@
-import Button from "./Button";
+// import Button from "./Button";
 import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
   return (
     <section className={styles.heroWrapper}>
-      <div className={`${styles.hero} container grid-flow`}>
+      <div
+        className={`${styles.hero} container region grid-flow`}
+        data-spacing="large"
+      >
         <img
           src="src/assets/images/illustration-intro.png"
           alt="Intro Illustration"
         />
-        <h1 className="section-title">
+        <h1 className={`${styles.heroTitle} section-title`}>
           All your files in one secure location, accessible anywhere.
         </h1>
-        <p>
+        <p className="section-lead">
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <Button role="button" children="Get started" />
+        <a className="button" href="#">
+          Get started
+        </a>
       </div>
     </section>
   );

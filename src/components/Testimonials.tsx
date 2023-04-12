@@ -18,20 +18,18 @@ interface ITestimonialProps {
 const Testimonials = ({ data }: ITestimonialProps) => {
   return (
     <section>
-      <div className="container">
-        <ul role="list" className={styles.testimonials}>
+      <div className="container region">
+        <ul role="list" className={`${styles.testimonials} grid`}>
           {data.map(({ author, message }) => (
             <li className={`${styles.testimonial} grid-flow`}>
-              <blockquote>{message}</blockquote>
+              <blockquote className={styles.testimonialMessage}>
+                {message}
+              </blockquote>
               <div className="flex-group" data-spacing="small">
-                <img
-                  src={author.avatar}
-                  alt={`${author.name} avatar`}
-                  className={styles.testimonialAuthorAvatar}
-                />
+                <img src={author.avatar} alt="" />
                 <div>
                   <p className={styles.testimonialAuthorName}>{author.name}</p>
-                  <p>
+                  <p className={styles.testimonialAuthorMeta}>
                     {author.position}, {author.company}
                   </p>
                 </div>

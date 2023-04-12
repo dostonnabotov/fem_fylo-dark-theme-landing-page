@@ -1,6 +1,5 @@
 .features {
-  display: grid;
-  gap: 2rem;
+  --grid-gap: clamp(var(--size-700), 10vw, var(--size-800));
 }
 
 .feature {
@@ -13,7 +12,7 @@
 }
 
 .featureTitle {
-  color: var(--clr-neutral-100);
   font-size: var(--fs-600);
   font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
 }

@@ -1,3 +1,4 @@
 .about {
-  display: grid;
+  --grid-gap: clamp(var(--size-600), 10vw, var(--size-800));
+  align-items: center;
 }

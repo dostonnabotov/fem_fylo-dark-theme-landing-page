@@ -1,67 +1,54 @@
+import styles from "../styles/Footer.module.css";
+import { EmailIcon, LocationIcon, PhoneIcon } from "../assets/icons/icons";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import Logo from "./Logo";
 
 const socialLinks = [
   {
     id: 1,
     name: "Facebook",
-    icon: "icon",
+    icon: <FaFacebookF />,
     url: "#",
   },
   {
     id: 2,
     name: "Twitter",
-    icon: "icon",
+    icon: <FaTwitter />,
     url: "#",
   },
   {
     id: 3,
     name: "Instagram",
-    icon: "icon",
+    icon: <FaInstagram />,
     url: "#",
   },
 ];
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container grid-flow">
+    <footer className={`${styles.footerWrapper}`}>
+      <div className="container region grid-flow" data-spacing="large">
         <Logo />
-        <div className="primary-footer">
-          <div>
-            <img
-              aria-hidden="true"
-              src="./assets/images/icon-location.svg"
-              alt=""
-            />
+        <div className={styles.footer}>
+          <div className={styles.footerDescription}>
+            <LocationIcon />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           </div>
-
-          <div>
-            <ul role="list">
-              <li>
-                <img
-                  aria-hidden="true"
-                  src="./assets/images/icon-phone.svg"
-                  alt=""
-                />
-                <a href="tel:15431234567">+1-543-123-4567</a>
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  src="./assets/images/icon-email.svg"
-                  alt=""
-                />
-                <a href="mailto:example@fylo.com">example@fylo.com</a>
-              </li>
-            </ul>
-          </div>
-
-          <nav>
-            <ul role="list">
+          <ul role="list" className={`${styles.footerContact} grid-flow`}>
+            <li className="flex-group">
+              <PhoneIcon />
+              <a href="tel:15431234567">+1-543-123-4567</a>
+            </li>
+            <li className="flex-group">
+              <EmailIcon />
+              <a href="mailto:example@fylo.com">example@fylo.com</a>
+            </li>
+          </ul>
+          <nav className={styles.footerNav}>
+            <ul role="list" className="grid-flow">
               <li>
                 <a href="#">About Us</a>
               </li>
@@ -75,7 +62,7 @@ const Footer = () => {
                 <a href="#">Blog</a>
               </li>
             </ul>
-            <ul role="list">
+            <ul role="list" className="grid-flow">
               <li>
                 <a href="#">Contact Us</a>
               </li>
@@ -87,22 +74,16 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
-
-          <div>
-            <ul role="list">
-              {socialLinks.map((socialLink) => (
-                <li>
-                  <a
-                    href={socialLink.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                  <span className="sr-only">{socialLink.name}</span>
-                  <i>{socialLink.icon}</i>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul role="list" className={`${styles.footerSocialLinks} flex-group`}>
+            {socialLinks.map(({ name, url, icon }) => (
+              <li>
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  <span className="sr-only">{name}</span>
+                  {icon}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
