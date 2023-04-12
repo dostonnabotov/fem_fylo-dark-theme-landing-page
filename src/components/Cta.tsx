@@ -1,4 +1,3 @@
-// import Button from "./Button";
 import styles from "../styles/Cta.module.css";
 
 const Cta = () => {
