@@ -1,5 +1,5 @@
-// import Button from "./Button";
 import styles from "../styles/Hero.module.css";
+import IllustrationIntro from "../assets/images/illustration-intro.png";
 
 const Hero = () => {
   return (
@@ -8,10 +8,7 @@ const Hero = () => {
         className={`${styles.hero} container region grid-flow`}
         data-spacing="large"
       >
-        <img
-          src="../assets/images/illustration-intro.png"
-          alt="Intro Illustration"
-        />
+        <img src={IllustrationIntro} alt="Intro Illustration" />
         <h1 className={`${styles.heroTitle} section-title`}>
           All your files in one secure location, accessible anywhere.
         </h1>

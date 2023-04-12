@@ -201,7 +201,7 @@ a {
   color: var(--clr-primary-400);
 }
 
-.custom-link i {
+.custom-link svg {
   margin-left: 0.5em;
   transition: transform 250ms ease-in-out;
 }
@@ -210,7 +210,7 @@ a {
   color: var(--clr-neutral-100);
 }
 
-.custom-link:is(:hover, :focus) i {
+.custom-link:is(:hover, :focus) svg {
   transform: translateX(20%);
 }
 

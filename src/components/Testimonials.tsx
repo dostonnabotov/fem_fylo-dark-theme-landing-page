@@ -1,6 +1,6 @@
 import styles from "../styles/Testimonials.module.css";
 
-type Testimonial = {
+export type Testimonial = {
   id: number;
   author: {
     name: string;

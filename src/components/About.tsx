@@ -1,4 +1,5 @@
 import { RightArrowIcon } from "../assets/icons/icons";
+import StayProductiveImg from "../assets/images/illustration-stay-productive.png";
 import styles from "../styles/About.module.css";
 
 const About = () => {
@@ -9,11 +10,7 @@ const About = () => {
         data-layout="50-50"
       >
         <div>
-          <img
-            src="../assets/images/illustration-stay-productive.png"
-            alt=""
-            aria-hidden="true"
-          />
+          <img src={StayProductiveImg} alt="" aria-hidden="true" />
         </div>
         <div className="grid-flow">
           <h2 className="section-title">Stay productive, wherever you are</h2>

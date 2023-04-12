@@ -1,6 +1,7 @@
 import styles from "../styles/Features.module.css";
 
-type Feature = {
+export type Feature = {
+  id: number;
   title: string;
   description: string;
   img: string;
