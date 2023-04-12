@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <img className="logo" src="src/assets/images/logo.svg" alt="Fylo brand" />
+    <img className="logo" src="../assets/images/logo.svg" alt="Fylo brand" />
   );
 };
 

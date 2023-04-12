@@ -9,7 +9,7 @@ const Hero = () => {
         data-spacing="large"
       >
         <img
-          src="src/assets/images/illustration-intro.png"
+          src="../assets/images/illustration-intro.png"
           alt="Intro Illustration"
         />
         <h1 className={`${styles.heroTitle} section-title`}>

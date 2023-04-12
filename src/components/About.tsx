@@ -10,7 +10,7 @@ const About = () => {
       >
         <div>
           <img
-            src="src/assets/images/illustration-stay-productive.png"
+            src="../assets/images/illustration-stay-productive.png"
             alt=""
             aria-hidden="true"
           />
