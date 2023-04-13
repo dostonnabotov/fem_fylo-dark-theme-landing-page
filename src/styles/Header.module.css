@@ -1,5 +1,5 @@
 .headerWrapper {
-  --region-space: var(--size-500);
+  --region-space: clamp(var(--size-500), 3vw, var(--size-600));
   background-color: var(--clr-neutral-700);
 }
 

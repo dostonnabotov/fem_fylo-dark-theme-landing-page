@@ -190,12 +190,6 @@ a {
   font-size: var(--fs-500);
 }
 
-.logo {
-  height: clamp(4ex, 4vw, 6ex);
-  width: auto;
-  flex: none;
-}
-
 .mx-auto {
   width: var(--mx-auto-width, fit-content);
   margin-inline: auto;

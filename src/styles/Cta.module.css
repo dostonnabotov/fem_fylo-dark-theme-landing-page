@@ -6,7 +6,7 @@
 
 .cta {
   --flow-space: var(--size-500);
-  width: min(100%, 50rem);
+  width: min(100% - 2rem, 50rem);
   margin-inline: auto;
   padding: clamp(var(--size-500), 8vw, var(--size-800));
   border-radius: 1rem;

@@ -1,0 +1,10 @@
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoIcon {
+  height: clamp(4ex, 4vw, 6ex);
+  width: auto;
+  flex: none;
+}

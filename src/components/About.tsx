@@ -4,11 +4,8 @@ import styles from "../styles/About.module.css";
 
 const About = () => {
   return (
-    <section>
-      <div
-        className={`${styles.about} container region grid`}
-        data-layout="50-50"
-      >
+    <section id="about" className="region">
+      <div className={`${styles.about} container grid`} data-layout="50-50">
         <div>
           <img src={StayProductiveImg} alt="" aria-hidden="true" />
         </div>

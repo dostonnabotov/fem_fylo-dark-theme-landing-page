@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Cta = () => {
   return (
-    <section className={`${styles.ctaWrapper} region`}>
+    <section id="cta" className={`${styles.ctaWrapper} region`}>
       <div className={`${styles.cta} grid-flow`}>
         <h2 className="section-title">Get early access today</h2>
         <p>

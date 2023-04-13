@@ -13,7 +13,7 @@ interface IFeaturesProps {
 
 const Features = ({ data }: IFeaturesProps) => {
   return (
-    <section>
+    <section id="features">
       <div className="container region">
         <ul
           role="list"

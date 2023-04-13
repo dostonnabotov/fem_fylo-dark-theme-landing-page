@@ -20,8 +20,15 @@
   z-index: -10;
 }
 
-@media only screen and (min-width: 50em) {
+@media (min-width: 50em) {
   .heroWrapper::before {
+    background-image: url("../assets/images/bg-curvy-desktop.svg");
+  }
+}
+
+@media (min-width: 70em) {
+  .heroWrapper::before {
+    height: 60%;
     background-image: url("../assets/images/bg-curvy-desktop.svg");
   }
 }

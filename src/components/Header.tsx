@@ -3,15 +3,15 @@ import styles from "../styles/Header.module.css";
 const navLinks = [
   {
     name: "Features",
-    url: "#",
+    url: "#features",
   },
   {
     name: "Team",
-    url: "#",
+    url: "#about",
   },
   {
     name: "Sign In",
-    url: "#",
+    url: "#cta",
   },
 ];
 
