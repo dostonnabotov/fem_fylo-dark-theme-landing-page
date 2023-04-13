@@ -5,8 +5,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
-import TestimonialsData from "./data/testimonials";
-import FeaturesData from "./data/features";
+import TestimonialsData from "./data/testimonials.json";
+import FeaturesData from "./data/features.json";
 
 const App = () => {
   return (
@@ -14,9 +14,9 @@ const App = () => {
       <Header />
       <main id="main-content">
         <Hero />
-        <Features data={FeaturesData()} />
+        <Features data={FeaturesData} />
         <About />
-        <Testimonials data={TestimonialsData()} />
+        <Testimonials data={TestimonialsData} />
       </main>
       <Cta />
       <Footer />
