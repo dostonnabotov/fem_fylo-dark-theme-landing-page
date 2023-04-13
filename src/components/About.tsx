@@ -1,5 +1,5 @@
-import { RightArrowIcon } from "../assets/icons/icons";
 import StayProductiveImg from "../assets/images/illustration-stay-productive.png";
+import { FaArrowCircleRight } from "react-icons/fa";
 import styles from "../styles/About.module.css";
 
 const About = () => {
@@ -24,7 +24,7 @@ const About = () => {
           </p>
           <a className="custom-link" href="#">
             <span>See how Fylo works</span>
-            <RightArrowIcon />
+            <FaArrowCircleRight />
           </a>
         </div>
       </div>

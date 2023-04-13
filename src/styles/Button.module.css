@@ -4,7 +4,7 @@
   justify-content: center;
 
   width: fit-content;
-  min-width: 10ch;
+  min-width: 15ch;
   padding: 1em 2em;
 
   font-family: var(--ff-secondary);
@@ -31,13 +31,13 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: var(--clr-gradient-1);
+  background-image: var(--gradient-primary);
   transition: opacity 150ms;
   z-index: -1;
 }
 
-.button:hover::after {
-  opacity: 0.7;
+.button:is(:hover, :focus)::after {
+  opacity: 0.5;
 }
 
 .button:active {

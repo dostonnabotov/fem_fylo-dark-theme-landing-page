@@ -1,5 +1,6 @@
 import styles from "../styles/Hero.module.css";
 import IllustrationIntro from "../assets/images/illustration-intro.png";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -17,9 +18,7 @@ const Hero = () => {
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <a className="button" href="#">
-          Get started
-        </a>
+        <Button children="Get started" />
       </div>
     </section>
   );

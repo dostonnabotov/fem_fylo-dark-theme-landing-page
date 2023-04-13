@@ -31,13 +31,13 @@
   }
 }
 
-.ctaButton {
+.ctaForm [type="submit"] {
   opacity: 0.5;
   pointer-events: none;
   cursor: not-allowed;
 }
 
-.ctaForm:valid .ctaButton {
+.ctaForm:valid [type="submit"] {
   opacity: 1;
   pointer-events: initial;
   cursor: pointer;
@@ -45,11 +45,12 @@
 
 .ctaInput {
   --default: var(--clr-neutral-400);
-  --invalid: var(--clr-danger-400);
-  --valid: hsl(130 52% 46%);
-  --focus: hsl(39, 100%, 50%);
+  --invalid: hsl(var(--clr-danger));
+  --valid: hsl(var(--clr-success));
+  --focus: hsl(var(--clr-warning));
   padding: 0.6em 2em;
   border: 2px solid var(--color, var(--default));
+  border-radius: 100vw;
 }
 
 .ctaInput:focus-visible {

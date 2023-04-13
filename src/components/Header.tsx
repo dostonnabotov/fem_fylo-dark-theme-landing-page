@@ -23,7 +23,7 @@ const Header = () => {
         <nav>
           <ul role="list" className="flex-group" data-spacing="large">
             {navLinks.map(({ name, url }) => (
-              <li>
+              <li key={name}>
                 <a href={url} className={styles.navLink}>
                   {name}
                 </a>

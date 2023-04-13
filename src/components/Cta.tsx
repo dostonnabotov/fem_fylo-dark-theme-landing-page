@@ -1,4 +1,5 @@
 import styles from "../styles/Cta.module.css";
+import Button from "./Button";
 
 const Cta = () => {
   return (
@@ -24,9 +25,7 @@ const Cta = () => {
               title="Enter valid email address"
               required
             />
-            <button type="submit" className={`${styles.ctaButton} button`}>
-              Get Started For Free
-            </button>
+            <Button type="submit" children="Get Started For Free" />
           </div>
         </form>
       </div>

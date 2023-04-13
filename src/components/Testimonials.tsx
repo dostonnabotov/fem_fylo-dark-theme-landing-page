@@ -20,8 +20,8 @@ const Testimonials = ({ data }: ITestimonialProps) => {
     <section>
       <div className="container region">
         <ul role="list" className={`${styles.testimonials} grid`}>
-          {data.map(({ author, message }) => (
-            <li className={`${styles.testimonial} grid-flow`}>
+          {data.map(({ id, author, message }) => (
+            <li key={id} className={`${styles.testimonial} grid-flow`}>
               <blockquote className={styles.testimonialMessage}>
                 {message}
               </blockquote>

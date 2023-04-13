@@ -5,19 +5,16 @@ import Logo from "./Logo";
 
 const socialLinks = [
   {
-    id: 1,
     name: "Facebook",
     icon: <FaFacebookF />,
     url: "#",
   },
   {
-    id: 2,
     name: "Twitter",
     icon: <FaTwitter />,
     url: "#",
   },
   {
-    id: 3,
     name: "Instagram",
     icon: <FaInstagram />,
     url: "#",
@@ -76,7 +73,7 @@ const Footer = () => {
           </nav>
           <ul role="list" className={`${styles.footerSocialLinks} flex-group`}>
             {socialLinks.map(({ name, url, icon }) => (
-              <li>
+              <li key={name}>
                 <a href={url} target="_blank" rel="noopener noreferrer">
                   <span className="sr-only">{name}</span>
                   {icon}

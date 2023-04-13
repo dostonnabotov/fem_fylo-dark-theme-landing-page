@@ -20,8 +20,8 @@ const Features = ({ data }: IFeaturesProps) => {
           className={`${styles.features} grid`}
           data-layout="50-50"
         >
-          {data.map(({ title, description, img }) => (
-            <li className={`${styles.feature} grid-flow`}>
+          {data.map(({ id, title, description, img }) => (
+            <li key={id} className={`${styles.feature} grid-flow`}>
               <img src={img} alt="" aria-hidden="true" />
               <h3 className={styles.featureTitle}>{title}</h3>
               <p>{description}</p>
