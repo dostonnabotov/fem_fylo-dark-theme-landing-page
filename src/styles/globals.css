@@ -222,6 +222,16 @@ a {
   white-space: normal !important;
 }
 
+#skip-nav {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-500);
+  z-index: 100;
+}
+
 .custom-link {
   display: inline-flex;
   align-items: center;

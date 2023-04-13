@@ -17,8 +17,15 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className={styles.headerWrapper}>
-      <div className={`${styles.header} container region`}>
+    <header className={`${styles.headerWrapper} region`}>
+      <a
+        id="skip-nav"
+        href="#main-content"
+        className="sr-only sr-only-focusable"
+      >
+        Skip to main content
+      </a>
+      <div className={`${styles.header} container`}>
         <Logo />
         <nav>
           <ul role="list" className="flex-group" data-spacing="large">

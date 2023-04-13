@@ -12,10 +12,12 @@ const App = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <Features data={FeaturesData()} />
-      <About />
-      <Testimonials data={TestimonialsData()} />
+      <main id="main-content">
+        <Hero />
+        <Features data={FeaturesData()} />
+        <About />
+        <Testimonials data={TestimonialsData()} />
+      </main>
       <Cta />
       <Footer />
     </>

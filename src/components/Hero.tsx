@@ -18,9 +18,7 @@ const Hero = () => {
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <a href="#cta">
-          <Button children="Get started" />
-        </a>
+        <Button children="Get started" />
       </div>
     </section>
   );
